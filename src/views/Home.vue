@@ -185,10 +185,10 @@ export default {
   border-bottom: solid 1px #f1f1f1;
 }
 .service-scrollbox {
-  padding: 60px 0;
+  padding: 2% 5%;
   color: #f1f1f1;
   background-color: #2c3e50;
-  width: 100%;
+  width: 90%;
   height: auto;
   border-bottom: solid 1px #f1f1f1;
 }

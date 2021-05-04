@@ -5,8 +5,10 @@ import jQuery from 'jquery'
 global.jquery = jQuery
 global.$ = jQuery
 window.$ = window.jQuery = require('jquery')
+import VueCarousel from 'vue-carousel';
 
 Vue.config.productionTip = false;
+Vue.use(VueCarousel);
 
 //Vue.component('app-server-status', Home)
 //グローバルに登録<app-server-status></app-server-status>でHomeコンポーネントを描画できる

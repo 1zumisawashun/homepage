@@ -36,7 +36,7 @@ export default {};
 .timeline-container {
   width: 60%;
   height: auto;
-  padding: 3% 0 3% 3%;
+  padding: 2% 0 3% 3%;
   margin: 0 auto;
 }
 

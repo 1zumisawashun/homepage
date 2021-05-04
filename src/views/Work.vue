@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+
     <div class="all-works-container">
       <div class="title">Note</div>
       <div class="works-container">
@@ -52,6 +53,30 @@
         </div>
       </div>
     </div>
+
+    <div class="all-works-container">
+      <div class="title">Qiita</div>
+      <div class="works-container">
+        <div class="works-block" v-for="qiita in qiitas" v-bind:key="qiita">
+          <transition name="fade">
+            <div class="card card-skin">
+              <a :href="qiita.url">
+                <img :src="qiita.image" class="card__image" />
+              </a>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  {{ qiita.title }}
+                </div>
+                <div class="card__overviewtext">
+                  {{ qiita.text }}
+                </div>
+              </div>
+            </div>
+          </transition>
+        </div>
+      </div>
+    </div>
+
     <div class="all-works-container">
       <div class="title">日経未来面</div>
       <div class="works-container">
@@ -115,7 +140,34 @@ export default {
         {
           title: "Vue.jsとFirebaseでポートフォリオを作ってみた",
           text: "プログラミング",
+          url: "https://note.com/1zushun/n/n7ae43566a69b",
           image: require("@/assets/note1.jpg"),
+        },
+        {
+          title: "日経未来面へのアイデア投稿をお勧めしたい理由",
+          text: "大学生",
+          url: "https://note.com/1zushun/n/n1c1b2ca38422",
+          image: require("@/assets/note2.jpg"),
+        },
+        {
+          title: "人材ベンチャーの長期インターンシップ参加をお勧めしたい理由",
+          text: "大学生",
+          url: "https://note.com/1zushun/n/nb5ddb1d26850",
+          image: require("@/assets/note3.jpg"),
+        },
+        {
+          title: "20卒社会人（営業職）がエンジニア転職をしました",
+          text: "社会人",
+          url: "https://note.com/1zushun/n/n9d69d565d68d",
+          image: require("@/assets/note4.jpg"),
+          
+        },
+      ],
+      qiitas: [
+        {
+          title: "No Title",
+          text: "No Content",
+          image: "https://placehold.jp/640x360.png",
         },
         {
           title: "No Title",
@@ -172,15 +224,15 @@ export default {
   color: white;
 }
 .works-container {
-  width: 90%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 .works-block {
-  width: 23%;
-  margin: 1%;
+  width: 22%;
+  margin: 1.5%;
 }
 
 .card-skin {

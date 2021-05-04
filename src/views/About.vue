@@ -1,7 +1,7 @@
 <template>
   <div class="all-container">
     <div class="user-container">
-      <img src="../assets/header.jpg" class="user-image" />
+      <img src="../assets/userimage2.jpg" class="user-image" />
       <div class="user-info">
         <strong>{{ user.name }}</strong>
         <div class="summary-block">
@@ -41,6 +41,7 @@
         <h2 class="skill-block animation type-2">{{ skills[8].title }}</h2>
       </div>
     </div>
+    <div class="timeline-title">TIMELINE</div>
       <timeline></timeline>
   </div>
 </template>
@@ -143,11 +144,12 @@ Timeline
   display: flex;
   flex-wrap: wrap;
 }
-.skill-title {
-  font-size: 25px;
+.skill-title,
+.timeline-title {
+  font-size: 30px;
   font-weight: bold;
   color:white;
-  padding: 2% 0 0 0;
+  padding: 3% 0 0 0;
 }
 /* JQueryのためのCSS要素 */
 .Item-Box {
