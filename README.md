@@ -1,10 +1,5 @@
 # homepage
-・slickを入れてworks.vueでスライドできるようにする
-・LPはwixのサイトを参考にして作る
-・横からスライドして入ってくるJSを入れる
-└純粋なJSを触ってみる
-・コンタクトページにgithub,twwierのアイコンを入れる
-
+cafelogのサイトとリンクをさせる
 ## Project setup
 ```
 npm install
